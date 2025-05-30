@@ -1,0 +1,6 @@
+@RecommenderAPI_HostAddress = http://localhost:5284
+
+GET {{RecommenderAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

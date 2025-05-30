@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D0626D2F-A201-468C-88B9-D1C3130C4A3F}|RecommenderAPI.csproj|c:\\users\\nicolas.margos\\source\\repos\\recommenderapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0626D2F-A201-468C-88B9-D1C3130C4A3F}|RecommenderAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0626D2F-A201-468C-88B9-D1C3130C4A3F}|RecommenderAPI.csproj|c:\\users\\nicolas.margos\\source\\repos\\recommenderapi\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0626D2F-A201-468C-88B9-D1C3130C4A3F}|RecommenderAPI.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0626D2F-A201-468C-88B9-D1C3130C4A3F}|RecommenderAPI.csproj|c:\\users\\nicolas.margos\\source\\repos\\recommenderapi\\services\\recommendationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0626D2F-A201-468C-88B9-D1C3130C4A3F}|RecommenderAPI.csproj|solutionrelative:services\\recommendationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0626D2F-A201-468C-88B9-D1C3130C4A3F}|RecommenderAPI.csproj|c:\\users\\nicolas.margos\\source\\repos\\recommenderapi\\models\\recommendationresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0626D2F-A201-468C-88B9-D1C3130C4A3F}|RecommenderAPI.csproj|solutionrelative:models\\recommendationresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0626D2F-A201-468C-88B9-D1C3130C4A3F}|RecommenderAPI.csproj|c:\\users\\nicolas.margos\\source\\repos\\recommenderapi\\controllers\\recommendationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0626D2F-A201-468C-88B9-D1C3130C4A3F}|RecommenderAPI.csproj|solutionrelative:controllers\\recommendationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0626D2F-A201-468C-88B9-D1C3130C4A3F}|RecommenderAPI.csproj|c:\\users\\nicolas.margos\\source\\repos\\recommenderapi\\models\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0626D2F-A201-468C-88B9-D1C3130C4A3F}|RecommenderAPI.csproj|solutionrelative:models\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-25T12:27:53.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T13:56:38.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RecommendationService.cs",
+              "DocumentMoniker": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\Services\\RecommendationService.cs",
+              "RelativeDocumentMoniker": "Services\\RecommendationService.cs",
+              "ToolTip": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\Services\\RecommendationService.cs",
+              "RelativeToolTip": "Services\\RecommendationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T13:55:41.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RecommendationController.cs",
+              "DocumentMoniker": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\Controllers\\RecommendationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RecommendationController.cs",
+              "ToolTip": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\Controllers\\RecommendationController.cs",
+              "RelativeToolTip": "Controllers\\RecommendationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T16:31:57.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RecommendationResults.cs",
+              "DocumentMoniker": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\Models\\RecommendationResults.cs",
+              "RelativeDocumentMoniker": "Models\\RecommendationResults.cs",
+              "ToolTip": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\Models\\RecommendationResults.cs",
+              "RelativeToolTip": "Models\\RecommendationResults.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T16:30:23.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentProfile.cs",
+              "DocumentMoniker": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\Models\\StudentProfile.cs",
+              "RelativeDocumentMoniker": "Models\\StudentProfile.cs",
+              "ToolTip": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\Models\\StudentProfile.cs",
+              "RelativeToolTip": "Models\\StudentProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T16:28:47.702Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

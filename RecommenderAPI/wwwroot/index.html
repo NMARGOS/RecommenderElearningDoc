@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Learning Recommender</title>
+</head>
+<body>
+    <h1>Get Your Learning Recommendations</h1>
+
+    <form id="recommendForm">
+        <label>Age Band:</label>
+        <input name="AgeBand" value="35-55"><br><br>
+
+        <label>Highest Education:</label>
+        <input name="HighestEducation" value="HE Qualification"><br><br>
+
+        <label>Disability (Y/N):</label>
+        <input name="Disability" value="N"><br><br>
+
+        <label>Module Code:</label>
+        <input name="Module" value="AAA"><br><br>
+
+        <button type="submit">Get Recommendations</button>
+    </form>
+
+    <h2>Recommendations:</h2>
+    <pre id="results"></pre>
+
+    <script>
+        document.getElementById("recommendForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+
+            const response = await fetch("/api/recommendation", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+            document.getElementById("results").textContent = JSON.stringify(result, null, 2);
+        });
+    </script>
+</body>
+</html>

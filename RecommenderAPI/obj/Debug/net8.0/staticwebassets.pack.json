@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\nicolas.margos\\source\\repos\\RecommenderAPI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RecommenderAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RecommenderAPI.props",
+      "PackagePath": "build\\RecommenderAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RecommenderAPI.props",
+      "PackagePath": "buildMultiTargeting\\RecommenderAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RecommenderAPI.props",
+      "PackagePath": "buildTransitive\\RecommenderAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

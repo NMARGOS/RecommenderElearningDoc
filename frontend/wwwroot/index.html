@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Recommendations</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .results {
+            margin-top: 30px;
+        }
+
+        .recommendation {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            border-left: 5px solid #007bff;
+        }
+
+        .recommendation span {
+            display: block;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .score {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .error {
+            color: red;
+            margin-top: 15px;
+        }
+
+        #modelUsed {
+            font-style: italic;
+            color: gray;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Get Your Learning Recommendations</h1>
+
+    <form id="recommendationForm">
+        <label>Student ID (optional):</label>
+        <input type="text" id="studentId" placeholder="Leave blank if you're a new student">
+
+        <label>Age Band:</label>
+        <select id="ageBand" required>
+            <option value="0-35">0-35</option>
+            <option value="35-55" selected>35-55</option>
+            <option value="55<=">55<=</option>
+        </select>
+
+        <label>Highest Education:</label>
+        <select id="highestEducation" required>
+            <option value="Lower Than A Level">Lower Than A Level</option>
+            <option value="A Level or Equivalent">A Level or Equivalent</option>
+            <option value="HE Qualification" selected>HE Qualification</option>
+            <option value="Post Graduate Qualification">Post Graduate Qualification</option>
+        </select>
+
+        <label>Disability (Y/N):</label>
+        <select id="disability" required>
+            <option value="N" selected>No</option>
+            <option value="Y">Yes</option>
+        </select>
+
+        <label>Module Code:</label>
+        <select id="module" required>
+            <option value="AAA" selected>AAA</option>
+            <option value="BBB">BBB</option>
+            <option value="CCC">CCC</option>
+            <option value="DDD">DDD</option>
+            <option value="EEE">EEE</option>
+            <option value="FFF">FFF</option>
+        </select>
+
+        <button type="submit">Get Recommendations</button>
+    </form>
+
+    <div class="results" id="resultsContainer"></div>
+    <p id="modelUsed"></p>
+</div>
+
+<script>
+    const form = document.getElementById("recommendationForm");
+    const resultsContainer = document.getElementById("resultsContainer");
+    const modelUsed = document.getElementById("modelUsed");
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const studentIdValue = document.getElementById("studentId").value;
+
+        const profile = {
+            AgeBand: document.getElementById("ageBand").value,
+            HighestEducation: document.getElementById("highestEducation").value,
+            Disability: document.getElementById("disability").value,
+            Module: document.getElementById("module").value
+        };
+
+        if (studentIdValue) {
+            profile.StudentID = parseInt(studentIdValue);
+        }
+
+        // Dynamic backend URL for Docker compatibility
+        const backendUrl = `http://${window.location.hostname}:5000/recommend`;
+
+        try {
+            const response = await fetch(backendUrl, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(profile)
+            });
+
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(errorText || "Server error");
+            }
+
+            const data = await response.json();
+            resultsContainer.innerHTML = "<h3>Recommendations:</h3>";
+
+            data.recommendations.forEach((item) => {
+                resultsContainer.innerHTML += `
+                    <div class="recommendation">
+                        <span>Activity Type: ${item.ActivityType}</span>
+                        <div class="score">Score: ${item.Score.toFixed(4)}</div>
+                    </div>
+                `;
+            });
+
+            modelUsed.textContent = `Model used: ${data.model}`;
+        } catch (error) {
+            resultsContainer.innerHTML = `<p class="error">Error fetching recommendations: ${error.message}</p>`;
+            modelUsed.textContent = "";
+            console.error("Fetch error:", error);
+        }
+    });
+</script>
+
+</body>
+</html>

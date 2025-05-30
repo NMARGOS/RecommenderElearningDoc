@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "RecommenderAPI.Controllers.RecommendationController",
+    "Method": "Recommend",
+    "RelativePath": "api/Recommendation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "profile",
+        "Type": "RecommenderAPI.Models.StudentProfile",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
