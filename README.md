@@ -16,7 +16,36 @@ The URL to download the file: https://www.kaggle.com/datasets/anlgrbz/student-de
 --------------------------------------------------------------------------------------------------------------------------
 
 
-<pre lang="markdown"> ## 1. Project Structure (Expected Layout) ``` RecommenderElearning/ ├── backend/ │ ├── api.py │ ├── recommender.py │ ├── recommend_hybrid.py │ ├── knn_recommender.py │ ├── requirements.txt │ ├── studentInfo.csv │ ├── studentVle.csv │ ├── vle.csv │ └── Dockerfile ├── frontend/ │ ├── bin/ │ ├── Controllers/ │ ├── Models/ │ ├── obj/ │ ├── Properties/ │ ├── Services/ │ ├── wwwroot/ │ ├── .dockerignore │ ├── appsettings.json │ ├── appsettings.Development.json │ ├── Dockerfile │ ├── Program.cs │ ├── RecommenderAPI.csproj │ ├── RecommenderAPI.csproj.user │ ├── RecommenderAPI.http │ ├── RecommenderAPI.sln │ └── WeatherForecast.cs └── docker-compose.yml ``` </pre>
+<pre lang="markdown"> ## 1. Project Structure (Expected Layout) ``` RecommenderElearning/
+├── backend/
+│ ├── api.py
+│ ├── recommender.py
+│ ├── recommend_hybrid.py
+│ ├── knn_recommender.py
+│ ├── requirements.txt
+│ ├── studentInfo.csv
+│ ├── studentVle.csv
+│ ├── vle.csv
+│ └── Dockerfile
+├── frontend/
+│ ├── bin/
+│ ├── Controllers/
+│ ├── Models/
+│ ├── obj/
+│ ├── Properties/
+│ ├── Services/
+│ ├── wwwroot/
+│ ├── .dockerignore
+│ ├── appsettings.json
+│ ├── appsettings.Development.json
+│ ├── Dockerfile
+│ ├── Program.cs
+│ ├── RecommenderAPI.csproj
+│ ├── RecommenderAPI.csproj.user
+│ ├── RecommenderAPI.http
+│ ├── RecommenderAPI.sln
+│ └── WeatherForecast.cs
+└── docker-compose.yml ``` </pre>
 
 2. Prerequisites
 ----------------
