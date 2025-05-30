@@ -16,28 +16,43 @@ The URL to download the file: https://www.kaggle.com/datasets/anlgrbz/student-de
 --------------------------------------------------------------------------------------------------------------------------
 
 
-1. Project Structure (Expected Layout)
+##1. Project Structure (Expected Layout)
 -------------------------------------
 RecommenderElearning/
 ├── backend/
-│   ├── api.py
-│   ├── recommender.py
-│   ├── recommend_hybrid.py
-│   ├── knn_recommender.py
-│   ├── requirements.txt
-│   └── studentInfo.csv, studentVle.csv, vle.csv, 
-│
+│ ├── api.py
+│ ├── recommender.py
+│ ├── recommend_hybrid.py
+│ ├── knn_recommender.py
+│ ├── requirements.txt
+│ ├── studentInfo.csv
+│ ├── studentVle.csv
+│ ├── vle.csv
+│ └── Dockerfile
 ├── frontend/
-│   ├── index.html
-│   ├── Dockerfile
-│   └── (any supporting files like CSS, JS if split)
-│
-├── docker-compose.yml
+│ ├── bin/
+│ ├── Controllers/
+│ ├── Models/
+│ ├── obj/
+│ ├── Properties/
+│ ├── Services/
+│ ├── wwwroot/
+│ ├── .dockerignore
+│ ├── appsettings.json
+│ ├── appsettings.Development.json
+│ ├── Dockerfile
+│ ├── Program.cs
+│ ├── RecommenderAPI.csproj
+│ ├── RecommenderAPI.csproj.user
+│ ├── RecommenderAPI.http
+│ ├── RecommenderAPI.sln
+│ └── WeatherForecast.cs
+└── docker-compose.yml
 
 2. Prerequisites
 ----------------
 - Docker installed and running
-- (Optional but recommended) Docker Desktop with WSL2 backend configured with at least 4 GB of memory
+- (RRecommended) Docker Desktop with WSL2 backend configured with at least 4 GB of memory
 
 3. How to Run the Project
 -------------------------
